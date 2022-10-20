@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'terminal';
+    src: url('./font/vcr_osd_mono_1.001-webfont.woff2') format('woff2'),
+         url('./font/vcr_osd_mono_1.001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#corpo{
+    margin: 50px auto;
+    width: 900px;
+    background-color: rgb(202, 202, 202);
+    padding: 50px;
+}
+#tela{
+    text-align: center;
+    word-wrap: break-word;
+    margin: auto;
+    width: 600px;
+    height: 90px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'terminal';
+    background-color: rgb(97, 163, 84);
+}
+#interação{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#textura{
+    padding: 20px;
+    width: 200px;   
+    height: 100px;
+}
+#teclado{   
+    padding: 20px;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(169, 169, 169);
+    border-radius: 10px;
+}
+#status{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    width: 200px;   
+    background-color: rgb(169, 169, 169);
+    border-radius: 10px;
+    height: 94px;
+}
+#status ul{
+    list-style: none;
+}
+#status ul li{
+    display: flex;
+    justify-content: space-between;
+}
+#status-bateria{
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+#status-liberado{
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.sinal{
+    width: 12px;
+    border-style: solid;
+    border-color: black;
+    height: 12px;
+    border-radius: 50%;
+    filter: brightness(0.5);
+}
+.sinal-liberado{
+    background-color: green;
+}
+.sinal-bateria{
+    background-color: red;
+}
+.sinal-aguarde{
+    background-color: yellow;
+}
+.botao{
+    color: white;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: rgb(26, 26, 26);
+    border: none;
+    border-radius: 5px;
+}
+.botao:hover{
+    filter: brightness(0.7);
+}
+.corrige{
+    background-color: rgb(255, 115, 0);
+    width: 80px;
+}
+.confirma{
+    background-color: green;
+    width: 80px;
+}
